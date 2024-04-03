@@ -16,17 +16,11 @@ html, body {
     background-color: #e8e6e6;
     display: grid;
     grid-template-columns: 25% 25% 50%;
-    grid-template-rows: 30% 50% 20%;
+    grid-template-rows: 26% 56% 18%;
 }
 
 #left {
     background-color: red;
-}
-
-#right {
-    background-color: blue;
-    grid-column: 3;
-    grid-row: 1 / 4;
 }
 
 #first {
@@ -65,6 +59,7 @@ html, body {
     grid-row: 2;
     grid-column: 1 / 3;
     padding: 30px;
+    padding-top: 10%;
     line-height: 5vw;
 }
 #third h1 {
@@ -84,4 +79,36 @@ html, body {
 }
 #fourth p {
     width: 40%;
+}
+
+
+#right {
+    grid-column: 3;
+    grid-row: 1 / 4;
+    padding: 40px;
+    padding-right: 150px; 
+}
+#right video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+#arrow {
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    padding: 20px;
+    border-radius: 50%;
+    color: white;
+    translate: translate(-50%, -50%);
+}
+#arrow i{
+    font-size: 40px;
+    font-weight: 100;
 }
